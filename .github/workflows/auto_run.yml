@@ -3,7 +3,6 @@ name: 金价自动监控
 on:
   schedule:
     - cron: '*/2 * * * *'
-      timezone: Asia/Shanghai
   workflow_dispatch:
 
 jobs:
