@@ -41,7 +41,7 @@ def main():
     # 8点基准价
     if not day_history and "08:00" <= time_str <= "09:30":
         day_history = [(time_str, price)]
-        send("🌅 {time_str}点金价", f"价格：{price} 元/克")
+        send(f"🌅 {time_str}点金价", f"价格：{price} 元/克")
 
     # 波动推送
     elif day_history:
