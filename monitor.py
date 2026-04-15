@@ -39,7 +39,7 @@ def main():
     day_history = HISTORY.get(today, [])
 
     # 8点基准价
-    if not day_history and "22:20" <= time_str <= "22:30":
+    if not day_history and "08:00" <= time_str <= "09:00":
         day_history = [(time_str, price)]
         send("🌅 8点金价", f"价格：{price} 元/克")
 
