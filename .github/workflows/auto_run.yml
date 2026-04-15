@@ -3,7 +3,6 @@ name: 金价自动监控
 on:
   schedule:
     - cron: '*/16 * * * *'
-  workflow_dispatch:
 
 jobs:
   run:
